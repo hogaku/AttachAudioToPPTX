@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Engine;
+var audioDirName = @"\audio\";
+var pptxFileName = @"test.pptx";
+var myBase = new AudioEngine(audioDirName, pptxFileName);
+myBase.AddAudioShape();
