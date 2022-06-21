@@ -5,7 +5,7 @@ using ShapeCrawler;
 namespace Engine;
 public class AudioEngine
 {
-    private string homeDir;// = @"C:\Users\koheiogawa\source\repos\AttachAudioToPPTX\AttachAudioToPPTX";
+    private string homeDir;
     private string audioPath;
     private string targetpptxFileName;
     public AudioEngine(string audioPath, string targetFileName)
@@ -17,8 +17,8 @@ public class AudioEngine
         homePaths.RemoveAt(8);
         homePaths.RemoveAt(7);
         homeDir = String.Join("\\",homePaths.ToArray());
-        this.audioPath = homeDir + audioPath;//@"\audio\";
-        this.targetpptxFileName = targetFileName;//@"test.pptx";
+        this.audioPath = homeDir + audioPath;
+        this.targetpptxFileName = targetFileName;
         try
         {
             //Set the current directory.
